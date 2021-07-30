@@ -1,6 +1,6 @@
 # Overview of the project 
 
-Tableau Public Visualizations:  https://public.tableau.com/app/profile/josh.stephens6499/viz/BootCamp-NYCCitiBikeChallengeVisualizations/NYCCitiBike 
+[Link to Tableau Story](https://public.tableau.com/app/profile/josh.stephens6499/viz/BootCamp-NYCCitiBikeChallengeVisualizations/NYCCitiBike) 
 
 
 ## Purpose
