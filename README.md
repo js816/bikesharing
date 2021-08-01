@@ -10,7 +10,9 @@ The purpose of this project was to develop visualizations of the NYC Citi Bike s
 
 ## Background
 
-According to the current information on the NYC Citi Bike program [website](https://account.citibikenyc.com/access-plans), there are a number of ways to utilize the program.  For $179 annually, members can take unlimited rides up to 45 minutes.  Customers who are not members such as tourists, can pay $3.50 for a ride up to 30 minutes (or $15/day).  Alternatively, ebikes which are powered, are $0.12/minute for members and $0.18/minute for non-members.  The [program](https://www.citibikenyc.com/how-it-works) boasts 20,000 bikes and over 1,300 locations.  (The dataset analyzed contained data for about 14,000 bikes and about 800 locations.)
+According to the current information on the NYC Citi Bike program [website](https://account.citibikenyc.com/access-plans), there are a number of ways to utilize the program.  For $179 annually, subscribers can take unlimited pedal-powered rides up to 45 minutes throughout the year.  Customers who are not subscribers such as tourists, can pay $3.50 for a ride up to 30 minutes (or $15/day).  
+
+Alternatively, ebikes which are powered, are $0.12/minute for subscribers and $0.18/minute for non-subscribers.  The [program](https://www.citibikenyc.com/how-it-works) boasts 20,000 bikes and over 1,300 locations.  (The dataset analyzed contained data for about 2.5 million rides, 14,000 bikes, and 800 locations.)
 
 The program has a 3.5 (out of 5) rating on [Tripadvisor](https://www.tripadvisor.com/Attraction_Review-g60763-d7071917-Reviews-Citi_Bike-New_York_City_New_York.html).  The reviews highlight some positive aspects about the program.  There are also some complaints such as charging $4 per 15 minutes after the first 30 minutes.
 
@@ -30,13 +32,13 @@ The graph shows that the vast majority of rides are of a short duration.  Beyond
 
 ![Checkout_times_by_gender](https://user-images.githubusercontent.com/82730954/127708828-b3746425-072a-4263-bc42-8d04d5ecad15.PNG)
 
-The graph above shows the same checkout time by gender.  The same pattern holds true across gender.  This graph also demonstrates that the majority of rides are taken by males.
+The graph above shows the same ride time now broken out by gender.  The same pattern holds true across gender.  This graph also demonstrates that the majority of rides are taken by males.
 
 ## Trips by Weekday per Hour
 
 ![Trips_by_weekday_per_hour](https://user-images.githubusercontent.com/82730954/127708859-d087f9be-0e1d-44de-9d1c-df5652c0664e.PNG)
 
-The above graph shows ride start times by hour (on the y-axis) and weekday (on the x-axis).  The data show that during the week, peak times are before and after normal working hours, although that does shift some on Thursdays and Fridays.  Weekend rides start to increase later in the day and are more consistent throughout the day.  Nighttime and early morning hours are the least popular times.
+The above graph shows ride start times by hour (on the y-axis) and day of week (on the x-axis).  The data show that during the week, peak times are before and after normal working hours, although that does shift some on Thursdays and Fridays.  Weekend rides start to increase later in the day and are more consistent throughout the day.  Nighttime and early morning hours are the least popular times.
 
 Understanding peak and off-peak times is important in understanding when bikes can be serviced and redistributed as needed without impacting the supply available.
 
@@ -44,16 +46,16 @@ Understanding peak and off-peak times is important in understanding when bikes c
 
 ![Trips_by_gender_weekday_per_hour](https://user-images.githubusercontent.com/82730954/127708878-855317d1-f405-4fca-b59c-81b6aae2fdb4.PNG)
 
-The above chart shows the same data, trips that start during each hour of the day for each day of the week, and breaks out the data by gender.  The chart, which can be filtered by gender, shows that similar usage patterns hold true for each gender.
+The above chart shows the same data as the previous graph but breaks out the data by gender.  The chart, which can be filtered by gender, shows that similar usage patterns hold true for each gender.
 
 
 ## User Trips by Gender by Weekday
 
 ![User_trips_by_gender_by_weekday](https://user-images.githubusercontent.com/82730954/127709139-74f6fab9-e134-436c-b4ce-6b0d76de2925.PNG)
 
-The above visualization shows that the majority of rides are taken by members who are male.  This pattern holds true across all days of the week.
+The above visualization shows that the majority of rides are taken by subscribers who are male.  This pattern holds true across all days of the week.
 
-Understanding this can help cater the marketing message for the program in Des Moines.  It may also demonstrate that there is a potential to increase female utilization of the program.
+Understanding this data can help clarify the marketing message for the program in Des Moines.  It may also demonstrate that there is a potential to increase female utilization of the program.
 
 ## Rides by Usertype
 
@@ -67,7 +69,7 @@ A variety of subscription models should be considered to gain momentum and help 
 
 ![Top_starting_locations](https://user-images.githubusercontent.com/82730954/127708933-aba1d4ea-4a78-429a-a19e-1f51532ff4f1.PNG)
 
-There are a large number of stations across the New York area where bike rides can begin and end.  The map above plots starting stations.  The larger and darker the marker, the more rides started at that station.  
+There are a large number of stations across the New York area where bike rides can begin and end.  The map above plots starting stations.  The larger and darker the marker, the more rides started at that station.  The vast majority (more than 97%) of rides begin and end at different stations.  
 
 Making the program convenient and useful to potential customers and subscribers would be an important part of helping set the program up for success.
 
@@ -78,7 +80,7 @@ It was a pleasure to be involved in visualizing the NYC Citi Bike program data. 
 
 ## By Individual Riders
 
-Additional insight could be gained if the data had a unique, anonymous ID for each rider.  Understanding additional factors could provide a greater depth of knowledge.  These could include:  the average number of rides taken by each subscriber/customer and how often a rider switches bikes to avoid the charge after 30 minutes for customers and 45 minutes for subscribers.
+Additional insight could be gained if the data had a unique, anonymous ID for each rider.  Understanding additional factors could provide a greater depth of knowledge.  These could include:  the average number of rides taken by each subscriber/customer and how often a rider switches bikes to avoid the additional charge after 30 minutes for customers and 45 minutes for subscribers.
 
 ## Additional Visualizations
 
@@ -94,4 +96,4 @@ In addition to analyzing ride data, financial data should also be examined to he
 
 ## Data Reliability
 
-Also, while birthyear is provided in the dataset, there are a number of outliers.  For example, riders who reported birthyears from 1887-1918, who would have been 100-132 years old in 2019, accounted for nearly 1,000 rides.  If birthyear is used in any analysis, it is suggested that a cutoff be determined and years beyond that be excluded as they seem to be unreliable.
+Also, while birthyear is provided in the dataset, there are a number of outliers.  For example, riders who reported birthyears from 1887-1918, who would have been 100-132 years old in 2019, accounted for nearly 1,000 rides.  If birthyear is used in any analysis, it is suggested that a cutoff be determined and years beyond that be excluded as they seem to be unreliable and skew the data.
